@@ -1,0 +1,25 @@
+{
+  "name": "ng-example",
+  "version": "0.0.0",
+  "description": "A very simple AngularJS example",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.0.0",
+    "pm2": "~0.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "pm2 start -w app.js",
+    "stop": "pm2 stop app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scull7/ng-example.git"
+  },
+  "author": "Taylor Kaplan",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/scull7/ng-example/issues"
+  }
+}
