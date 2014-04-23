@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	</head>
+	<body ng-app="app">
+
+		<div class="container">
+			<div ng-controller="dataBindingExample">
+				<h1> Check out 2-way data binding </h1>
+				<input type="text" ng-model="example.bindme"></input>
+				<p>This is a cool angular expression: {{example.bindme}}</p>
+			</div>
+			<div ng-controller="ngRepeatExample">
+				<h2> Tell me how many times I should repeat myself </h2>
+				<input type="text" ng-model="example.repeat" ng-keyup="makeHash()"></input>
+				<ul>
+					<li ng-repeat="obj in example.hash">{{obj}}</li>
+				</ul>
+			</div>
+			<div ng-controller="showHideExample">
+				<h2> Hiding and showing divs </h2>
+				<button class="btn alert" type="button" ng-click="state = !state" ng-init="state = true">Div state: {{state}}</button>
+				<div ng-show="state">
+					<h3> Check me out, I'm visible!!! </h3>
+					<p> I am full of content and sometimes it's hard to hide it all. </p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Import scripts -->
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers/dataBindingExample.js"></script>
+		<script src="js/controllers/ngRepeatExample.js"></script>
+		<script src="js/controllers/showHideExample.js"></script>
+	</body>
+</html>
