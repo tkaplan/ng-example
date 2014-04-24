@@ -20,6 +20,8 @@ Run the App
 
 Using Vagrant
 ------------
+Vagrant ssh password is: vagrant
+
 1. Vagrant up
 2. vagrant ssh
 3. npm install
