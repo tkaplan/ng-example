@@ -18,3 +18,12 @@ Run the App
 4. Browse to localhost:3000
 5. Profit
 
+Using Vagrant
+------------
+1. Vagrant up
+2. vagrant ssh
+3. npm install
+4. npm start
+5. node app
+6. Browse to localhost:3000
+7. Profit some more!
